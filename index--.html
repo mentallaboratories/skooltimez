@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="js-speaker-form">
+        <ul style="list-style: none;">
+            <li>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+            </li>
+            <li>
+                <label for="tel">Telephone</label>
+                <input type="tel" name="tel" id="tel" />
+            </li>
+            <li>
+                <label for="mail">e-mail</label>
+                <input type="mail" name="mail" id="mail" />
+            </li>
+            <li>
+                <button type="submit">Submit</button>
+            </li>
+        </ul>
+        
+        
+
+    </form>
+<script>
+    (() => {
+        document
+        .querySelector('.js-speaker-form')
+        .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+            console.log('${name}: ${value}'),
+            );
+        });
+    })();
+</script>   
+</body>
+</html>

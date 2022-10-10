@@ -289,20 +289,20 @@ body {
     border-radius: 10px;
 }
 
-.icon-antenna::before {
-    background-image: url(../images/stationery.png);
+.icon-schoolbag::before {
+    background-image: url(../images/routine-schoolbag.png);
 }
 
-.icon-clock::before {
-    background-image: url(../images/schoolbag.png);
+.icon-stationery::before {
+    background-image: url(../images/routine-stationery.png);
 }
 
-.icon-diagram::before {
-    background-image: url(../images/icon-features-diagram.svg);
+.icon-whiteboard::before {
+    background-image: url(../images/routine-whiteboard.png);
 }
 
-.icon-astronaut::before {
-    background-image: url(../images/icon-features-astronaut.svg);
+.icon-worktop::before {
+    background-image: url(../images/routine-doing.png);
 }
 
 .features-title {
