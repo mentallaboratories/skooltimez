@@ -1,5 +1,5 @@
 :root {
-    --background-color: #deeaf1;
+    --background-color: hsl(202, 48%, 26%);
     --light-text-color: #98c1d9;
     --plain-text-color: #3d5a80;
     --link-text-color: #212121;
@@ -211,6 +211,19 @@ body {
     background-size:cover;
     background-position:top;
 }
+
+.class {
+    background-image: url(../images/mode-cw-lesson.png);
+}
+
+.workspace {
+    background-image: url(../images/mode-hw-workspace.png);
+}
+
+.smartphone{
+    background-image: url(../images/mode-IT-smartfhone.png);
+}
+
 
 .hero-class{
     display:flex;
