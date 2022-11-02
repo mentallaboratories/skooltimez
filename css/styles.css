@@ -287,18 +287,20 @@ body {
 
 /* !!!!!!!!!!!   FEATURES       !!!!!!!!!! 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
-.fetures-list{
-    display: block;
+.link-list{
+    display: flex;
     width:100%;
     height: 100%;
+    justify-content:space-between;
+    align-items:center
     background-color: var(--accent-color) ;
 }
 
-.features-item {
+.link-item {
     width: calc((100%-120px)/5);
 }
 
-.features-item::before {
+.link-item::before {
     content: "";
     display: block;
     margin-bottom: 30px;
@@ -311,23 +313,24 @@ body {
     border-radius: 10px;
 }
 
-.icon-schoolbag::before {
-    background-image: url(../images/routine-schoolbag.png);
+
+.icon-timetable::before {
+    background-image: url(../images/layout/timetable.png);
 }
 
-.icon-stationery::before {
-    background-image: url(../images/routine-stationery.png);
+.icon-calendar::before {
+    background-image: url(../images/layout/planner.png);
 }
 
 .icon-whiteboard::before {
-    background-image: url(../images/routine-whiteboard.png);
+    background-image: url(../images/layout/whiteboard.png);
 }
 
 .icon-worktop::before {
     background-image: url(../images/routine-doing.png);
 }
 
-.features-title {
+.link-title {
     font-size: 14px;
     line-height: 1.15;
     text-transform: uppercase;
@@ -336,7 +339,7 @@ body {
     margin-bottom: 10px;
 }
 
-.feature-text {
+.link-text {
     line-height: 1.71;
 }
 
