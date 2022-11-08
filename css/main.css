@@ -430,6 +430,25 @@ body {
   border-bottom: 3px dotted black;
 }
 
+.heading {
+  font-family: "Freckle Face", cursive;
+  font-weight: 14px;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+
+.instruction {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.hand-written {
+  font-family: "Pangolin", cursive;
+}
+
+.fancy {
+  font-family: "Finger Paint", cursive;
+}
+
 .link {
   font-weight: 500;
   line-height: 1.14;
