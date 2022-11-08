@@ -1,0 +1,19 @@
+.section {
+    padding: 60px 0;
+    @include desktop{
+        padding: 94px 0;
+    }
+}
+
+.section__title {
+    
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    color: $titleTextColor;
+
+    margin-bottom: 50px;
+    @include desktop{
+        font-size: 36px;
+    }
+}

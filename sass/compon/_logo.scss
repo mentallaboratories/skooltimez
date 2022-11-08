@@ -1,0 +1,38 @@
+.logo {
+    font-family: 'Freckle Face', cursive;
+    font-weight: 600;
+    color: #000000;
+    font-size: 44px;
+    line-height: 1.16px;
+}
+
+.logo__wrap {
+    width: 250px;
+    height: 68px;
+    border-radius: 30px;
+
+    border: 3px double black;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// .heading{
+//     font-family: 'Freckle Face', cursive;
+//     font-weight: 14px;
+//     letter-spacing: 1px;
+//     font-size: 40px;
+// }
+
+// .instruction{
+//     font-family: 'IBM Plex Mono', monospace;
+// }
+// .hand-written{
+//     font-family: 'Pangolin', cursive;
+// }
+
+// .fancy{
+//     font-family: 'Finger Paint', cursive;
+// }
