@@ -1,0 +1,61 @@
+.nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &::before{
+        content: "";
+        display: block;
+        width: 116px;
+
+        position: absolute;
+        top: 50%;
+        left: -116px;
+        translate: 0 -50%;
+        
+
+        border-bottom: 3px dotted black;
+    }
+}
+
+.nav__item{
+    position: relative;
+    border-radius: 15px;
+
+    border: 3px double black;
+    padding: 3px 15px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before{
+        content: "";
+        display: block;
+        width: 16px;
+
+        position: absolute;
+        top: 50%;
+        left: -18px;
+        translate: 0 -50%;
+        
+
+        border-bottom: 3px solid black;
+    }
+
+
+   
+}
+
+.nav__link{
+    font-family: 'Finger Paint', cursive;
+    font-size: 18px;
+    line-height: 1.17;
+
+    color: tomato;
+    &:hover, &:focus{
+        color: black;
+    }
+}

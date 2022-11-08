@@ -4,10 +4,19 @@
 
     border: 1px solid tomato;
     padding: 16px 0;
-        
-    
+           
 }
 
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__img{
+    width: 51px;
+    height: 30px;
+}
 
 
 
