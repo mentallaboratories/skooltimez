@@ -568,6 +568,14 @@ body {
           justify-content: space-between;
 }
 
+.footer-block__title {
+  display: block;
+  color: white;
+  font-weight: 14px;
+  letter-spacing: 1px;
+  font-family: "Pangolin", cursive;
+}
+
 .main-info__section {
   height: auto;
   background-color: white;
@@ -577,8 +585,9 @@ body {
 .main-info__container {
   border: 3px solid tomato;
   background-color: gray;
-  border-radius: 25px;
+  border-radius: 25px 25px 0 0;
   padding: 15px;
+  border-bottom: 0;
 }
 
 .main-info__list {
@@ -589,7 +598,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 21px;
+  gap: 12px;
 }
 
 .main-info__item {
@@ -674,6 +683,10 @@ body {
   padding: 15px 0;
 }
 
+.lesson-plan__container {
+  border: 3px solid tomato;
+}
+
 .esl-skills__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -697,7 +710,7 @@ body {
   background-color: white;
 }
 
-.skills__list {
+.subjects__list {
   margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,7 +721,7 @@ body {
   gap: 10px;
 }
 
-.skills__icons {
+.subjects__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,22 +737,20 @@ body {
 }
 
 .lesson-part__list {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px;
+  padding: 6px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 30px;
 }
 
 .lesson-part__item {
   display: block;
   margin-bottom: 15px;
-  width: 100%;
+  max-width: 240px;
+  width: calc((100% - 60px) / 3);
 }
 
 .lesson-part__title {

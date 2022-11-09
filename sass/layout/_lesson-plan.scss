@@ -2,6 +2,10 @@
     padding: 15px 0;
 }
 
+.lesson-plan__container{
+    border: 3px solid tomato;
+}
+
 .esl-skills__list{
     display: flex;
     
@@ -19,7 +23,7 @@ border: 3px solid tomato;
 background-color: white;
 }
 
-.skills__list{
+.subjects__list{
     // position: absolute;
     // top: 0;
     // right: 0;
@@ -31,7 +35,7 @@ background-color: white;
 
     // margin: 0 auto 18px auto;
 }
-.skills__icons{
+.subjects__icons{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -58,7 +62,7 @@ background-color: white;
     display: block;
     margin-bottom: 15px;
     max-width: 240px;
-    width: calc((100%-60px)/3);
+    width: calc((100% - 60px)/3);
 }
 
 .lesson-part__title{

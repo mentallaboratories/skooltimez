@@ -8,14 +8,15 @@
 .main-info__container{
     border: 3px solid tomato;
     background-color: gray;
-    border-radius: 25px;
+    border-radius: 25px 25px 0 0;
     padding: 15px;
+    border-bottom: 0;
 }
 
 .main-info__list{
     display: flex;
     flex-direction: column;
-    gap: 21px;
+    gap: 12px;
 }
 
 .main-info__item{
