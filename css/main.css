@@ -536,7 +536,9 @@ body {
 
 /* !!!-------------footer-----------!!!! */
 .footer {
-  background-color: #2F303A;
+  background-color: tomato;
+  border-radius: 15px;
+  border: 3px solid gray;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -623,7 +625,7 @@ body {
 }
 
 .lesson-plan__section {
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .esl-skills__list {
@@ -632,9 +634,11 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border: 1px solid gray;
+  border: 3px solid tomato;
   border-radius: 15px;
-  margin-bottom: 18px;
+  margin: 0 auto 18px auto;
+  background-color: tomato;
+  margin: 0 auto;
 }
 
 .esl-skills__icons {
@@ -647,8 +651,23 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 6px;
+  padding: 3px;
   width: 42px;
+  border-radius: 50%;
+  border: 3px solid tomato;
+  background-color: white;
+}
+
+.lesson-part__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 9px;
 }
 
 .lesson-part__item {
@@ -659,4 +678,59 @@ body {
   margin-bottom: 9px;
   font-family: "Finger Paint", cursive;
   color: black;
+}
+
+.lesson__link {
+  color: black;
+}
+.lesson__link:hover, .lesson__link:focus {
+  color: tomato;
+}
+
+.timetable__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.timetable-img {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timetable-thursday {
+  font-family: "Finger Paint", cursive;
+}
+
+.timetable-title__past {
+  margin-bottom: 5px;
+  color: gray;
+  font-size: 14px;
+  border-bottom: 3px solid green;
+}
+
+.timetable-title__day {
+  margin-bottom: 5px;
+  color: tomato;
+  font-family: "Pangolin", cursive;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.timetable-title__fut {
+  margin-bottom: 5px;
+  color: black;
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */
