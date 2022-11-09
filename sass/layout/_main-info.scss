@@ -30,6 +30,17 @@
     }
 }
 
+.main-info__header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    @include tablet{
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+
 .main-info__title{
     color: tomato;
     font-family: 'Pangolin', cursive;
@@ -40,6 +51,7 @@
     background-color: white;
     border-radius: 9px;
     padding: 3px;
+    margin-bottom: 6px;
 }
 
 .main-info__content{
