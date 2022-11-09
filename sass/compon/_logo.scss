@@ -20,19 +20,19 @@
     align-items: center;
     justify-content: center;
 
-    &::after{
-        content: "";
-        display: block;
-        width: 160px;
+    // &::after{
+    //     content: "";
+    //     display: block;
+    //     width: 160px;
 
-        position: absolute;
-        top: 50%;
-        right: -160px;
-        translate: 3px -50%;
+    //     position: absolute;
+    //     top: 50%;
+    //     right: -160px;
+    //     translate: 3px -50%;
         
 
-        border-bottom: 3px dotted black;
-    }
+    //     border-bottom: 3px dotted black;
+    // }
 }
 
 .heading{

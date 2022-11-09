@@ -419,16 +419,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.logo__wrap::after {
-  content: "";
-  display: block;
-  width: 160px;
-  position: absolute;
-  top: 50%;
-  right: -160px;
-  translate: 3px -50%;
-  border-bottom: 3px dotted black;
-}
 
 .heading {
   font-family: "Freckle Face", cursive;
@@ -467,16 +457,6 @@ body {
           align-items: center;
   gap: 15px;
 }
-.nav::before {
-  content: "";
-  display: block;
-  width: 116px;
-  position: absolute;
-  top: 50%;
-  left: -116px;
-  translate: 0 -50%;
-  border-bottom: 3px dotted black;
-}
 
 .nav__item {
   position: relative;
@@ -493,25 +473,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.nav__item::before {
-  content: "";
-  display: block;
-  width: 16px;
-  position: absolute;
-  top: 50%;
-  left: -18px;
-  translate: 0 -50%;
-  border-bottom: 3px solid black;
-}
 
 .nav__link {
   font-family: "Finger Paint", cursive;
   font-size: 18px;
   line-height: 1.17;
-  color: tomato;
+  color: black;
 }
 .nav__link:hover, .nav__link:focus {
-  color: black;
+  color: tomato;
 }
 
 /* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!*/
