@@ -1,8 +1,19 @@
 .nav{
     position: relative;
     display: flex;
-    align-items: center;
     gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    border: 3px dotted black;
+    background-color: tomato;
+    border-radius: 25px;
+    padding: 9px;
+
+    @include desktop{
+        flex-wrap: nowrap;
+    }
 
     // &::before{
     //     content: "";
@@ -25,11 +36,16 @@
 
     border: 3px double black;
     padding: 3px 15px;
-    
-
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    background-color: white;
+    // flex-wrap: wrap;
+
+    // @include desktop{
+    //     flex-wrap: nowrap;
+    // }
 
     // &::before{
     //     content: "";

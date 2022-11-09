@@ -1,0 +1,67 @@
+.main-info__section{
+    height: auto;
+    background-color: white;
+    
+    padding: 16px 16px;
+}
+
+.main-info__container{
+    border: 3px solid tomato;
+    background-color: gray;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.main-info__list{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.main-info__item{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    @include desktop{
+        flex-direction: row;
+        align-items:center;
+        gap: 15px;
+    }
+}
+
+.main-info__title{
+    color: tomato;
+    font-family: 'Pangolin', cursive;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    display: inline-block;
+    background-color: white;
+    border-radius: 9px;
+    padding: 3px;
+}
+
+.main-info__content{
+    color: white;
+}
+
+.lesson__name{
+    color: white;
+    font-family: 'Finger Paint', cursive;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.lesson__stats{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    line-height: 1.12;
+
+    display: block;
+    width: 100%;
+    margin-bottom: 21px;
+    padding: 3px 12px;
+    border-radius: 9px 9px 0 0;
+    background-color: rgba(245, 240, 240, 0.5);
+}

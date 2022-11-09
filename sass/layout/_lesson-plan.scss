@@ -1,0 +1,32 @@
+.lesson-plan__section{
+    padding: 15px;
+}
+
+.esl-skills__list{
+    display: flex;
+    justify-content: space-around;
+
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-bottom: 18px;
+}
+
+.esl-skills__icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px;
+    width: 42px;
+}
+
+.lesson-part__item{
+    margin-bottom: 15px;
+}
+
+.lesson-part__title{
+    margin-bottom: 9px;
+
+    font-family: 'Finger Paint', cursive;
+    color: black;
+}

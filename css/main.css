@@ -374,11 +374,11 @@ body {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 40px 0;
 }
 @media screen and (min-width: 1200px) {
   .section {
-    padding: 94px 0;
+    padding: 64px 0;
   }
 }
 
@@ -452,10 +452,25 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 3px dotted black;
+  background-color: tomato;
+  border-radius: 25px;
+  padding: 9px;
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .nav__item {
@@ -469,9 +484,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
 }
 
 .nav__link {
@@ -486,25 +502,35 @@ body {
 
 /* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!*/
 .header {
-  height: 100px;
-  border: 1px solid tomato;
+  height: auto;
+  min-width: 256px;
+  border: 3px solid tomato;
+  border-radius: 25px;
   padding: 16px 0;
 }
-
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  row-gap: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .header__img {
-  width: 51px;
+  width: 151px;
   height: 30px;
 }
 
@@ -513,4 +539,124 @@ body {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.main-info__section {
+  height: auto;
+  background-color: white;
+  padding: 16px 16px;
+}
+
+.main-info__container {
+  border: 3px solid tomato;
+  background-color: gray;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.main-info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 21px;
+}
+
+.main-info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .main-info__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+  }
+}
+
+.main-info__title {
+  color: tomato;
+  font-family: "Pangolin", cursive;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: white;
+  border-radius: 9px;
+  padding: 3px;
+}
+
+.main-info__content {
+  color: white;
+}
+
+.lesson__name {
+  color: white;
+  font-family: "Finger Paint", cursive;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.lesson__stats {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  line-height: 1.12;
+  display: block;
+  width: 100%;
+  margin-bottom: 21px;
+  padding: 3px 12px;
+  border-radius: 9px 9px 0 0;
+  background-color: rgba(245, 240, 240, 0.5);
+}
+
+.lesson-plan__section {
+  padding: 15px;
+}
+
+.esl-skills__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 1px solid gray;
+  border-radius: 15px;
+  margin-bottom: 18px;
+}
+
+.esl-skills__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6px;
+  width: 42px;
+}
+
+.lesson-part__item {
+  margin-bottom: 15px;
+}
+
+.lesson-part__title {
+  margin-bottom: 9px;
+  font-family: "Finger Paint", cursive;
+  color: black;
 }/*# sourceMappingURL=main.css.map */
