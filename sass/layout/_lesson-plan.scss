@@ -1,12 +1,12 @@
 .lesson-plan__section{
-    padding: 15px;
+    padding: 15px 0;
 }
 
 .esl-skills__list{
     display: flex;
     justify-content: space-around;
 
-    border: 1px solid gray;
+    border: 3px solid tomato;
     border-radius: 15px;
     margin-bottom: 18px;
 }
@@ -16,8 +16,11 @@
     align-items: center;
     justify-content: center;
 
-    padding: 6px;
+    padding: 3px;
     width: 42px;
+    border-radius: 50%;
+border: 3px solid tomato;
+background-color: white;
 }
 
 .lesson-part__item{
