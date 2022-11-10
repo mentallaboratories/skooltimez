@@ -57,13 +57,29 @@ body {
     overflow: hidden;
 }
 
-.done{
-    display: inline-flex;
+.icon-cont{
+    display: flex;
     align-items: center;
     justify-content: center;
+
+    width: 15px;
+    height: 15px;
+}
+
+.icon-cont-part{
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+}
+
+.done{
     fill:green;
-    width: 16px;
-    height: 16px;
+}
+
+.undone{
+    fill:white;
 }
 
 

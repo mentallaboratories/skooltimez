@@ -3,8 +3,8 @@
 }
 
 .lesson-plan__container{
-    border-right: 3px solid tomato;
-    border-left: 3px solid tomato;
+    // border-right: 3px solid tomato;
+    // border-left: 3px solid tomato;
 }
 
 .skills__list{
@@ -18,11 +18,13 @@
     justify-content: center;
 
     padding: 3px;
-    width: 42px;
+    width: 32px;
     border-radius: 50%;
 border: 3px solid tomato;
 background-color: white;
 }
+
+
 
 .skills__icons--header {
     display: flex;
@@ -86,6 +88,7 @@ background-color: white;
     }
 }
 
+
 .lesson-part__item{
     display: block;
     margin-bottom: 15px;
@@ -112,6 +115,8 @@ background-color: white;
 
     font-family: 'Finger Paint', cursive;
     color: white;
+
+    position: relative;
 }
 
 .lesson__link{
@@ -121,9 +126,39 @@ background-color: white;
     }
 }
 
+.instruction__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.instruction__title{
+    
+}
 .lesson-part__instructions{
     padding: 9px;
 
     border: 1px solid gray;
     border-radius: 0 0 9px 9px;
+}
+
+.instruction__icon-set{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.lesson__img{
+    display: block;
+    width: 100%;
+    background-color: gray;
+}
+
+.img__top{
+    display: block;
+    width: 100%;
+    background-color: tomato;
+    height: 42px;
 }

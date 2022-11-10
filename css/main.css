@@ -375,19 +375,35 @@ body {
   overflow: hidden;
 }
 
-.done {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.icon-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 15px;
+  height: 15px;
+}
+
+.icon-cont-part {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 100%;
+}
+
+.done {
   fill: green;
-  width: 16px;
-  height: 16px;
+}
+
+.undone {
+  fill: white;
 }
 
 .section {
@@ -563,7 +579,8 @@ body {
   display: flex;
   background-color: tomato;
   border-radius: 0 0 15px 15px;
-  padding: 20px;
+  padding: 30px 15px;
+  gap: 30px;
 }
 @media screen and (max-width: 479px) {
   .footer-container {
@@ -609,7 +626,6 @@ body {
 .main-info__section {
   height: auto;
   background-color: white;
-  padding: 16px 16px;
 }
 
 .main-info__container {
@@ -707,11 +723,6 @@ body {
   padding: 15px 0;
 }
 
-.lesson-plan__container {
-  border-right: 3px solid tomato;
-  border-left: 3px solid tomato;
-}
-
 .skills__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -729,7 +740,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 3px;
-  width: 42px;
+  width: 32px;
   border-radius: 50%;
   border: 3px solid tomato;
   background-color: white;
@@ -815,6 +826,7 @@ body {
   border-radius: 3px;
   font-family: "Finger Paint", cursive;
   color: white;
+  position: relative;
 }
 
 .lesson__link {
@@ -824,10 +836,48 @@ body {
   color: tomato;
 }
 
+.instruction__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
 .lesson-part__instructions {
   padding: 9px;
   border: 1px solid gray;
   border-radius: 0 0 9px 9px;
+}
+
+.instruction__icon-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lesson__img {
+  display: block;
+  width: 100%;
+  background-color: gray;
+}
+
+.img__top {
+  display: block;
+  width: 100%;
+  background-color: tomato;
+  height: 42px;
 }
 
 .timetable__container {
