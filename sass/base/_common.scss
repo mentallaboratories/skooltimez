@@ -57,4 +57,13 @@ body {
     overflow: hidden;
 }
 
+.done{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill:green;
+    width: 16px;
+    height: 16px;
+}
+
 

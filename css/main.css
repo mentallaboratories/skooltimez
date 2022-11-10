@@ -375,6 +375,21 @@ body {
   overflow: hidden;
 }
 
+.done {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: green;
+  width: 16px;
+  height: 16px;
+}
+
 .section {
   padding: 40px 0;
 }
@@ -794,8 +809,12 @@ body {
 
 .lesson-part__title {
   margin-bottom: 9px;
+  display: block;
+  background-color: tomato;
+  padding: 3px 9px;
+  border-radius: 3px;
   font-family: "Finger Paint", cursive;
-  color: black;
+  color: white;
 }
 
 .lesson__link {
@@ -803,6 +822,12 @@ body {
 }
 .lesson__link:hover, .lesson__link:focus {
   color: tomato;
+}
+
+.lesson-part__instructions {
+  padding: 9px;
+  border: 1px solid gray;
+  border-radius: 0 0 9px 9px;
 }
 
 .timetable__container {
