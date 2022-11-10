@@ -359,6 +359,8 @@ img {
 
 .current {
   color: tomato;
+  border: 3px solid white;
+  background-color: gray;
 }
 
 body {
@@ -399,7 +401,7 @@ body {
   font-family: "Freckle Face", cursive;
   font-weight: 600;
   color: #000000;
-  font-size: 44px;
+  font-size: 34px;
   line-height: 1.16px;
 }
 
@@ -407,7 +409,8 @@ body {
   position: relative;
   width: 250px;
   height: 68px;
-  border-radius: 30px;
+  border-radius: 20px;
+  padding: 6px;
   border: 3px double black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,7 +467,7 @@ body {
   border: 3px dotted black;
   background-color: tomato;
   border-radius: 25px;
-  padding: 9px;
+  padding: 6px;
 }
 @media screen and (min-width: 1200px) {
   .nav {
@@ -477,7 +480,7 @@ body {
   position: relative;
   border-radius: 15px;
   border: 3px double black;
-  padding: 3px 15px;
+  padding: 3px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,9 +495,8 @@ body {
 
 .nav__link {
   font-family: "Finger Paint", cursive;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.17;
-  color: black;
 }
 .nav__link:hover, .nav__link:focus {
   color: tomato;
@@ -504,9 +506,6 @@ body {
 .header {
   height: auto;
   min-width: 256px;
-  border: 3px solid tomato;
-  border-radius: 25px;
-  padding: 16px 0;
 }
 .header__container {
   display: -webkit-box;
@@ -521,6 +520,9 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   row-gap: 15px;
+  padding: 15px;
+  border: 3px solid tomato;
+  border-radius: 25px;
 }
 @media screen and (min-width: 1200px) {
   .header__container {
@@ -536,9 +538,6 @@ body {
 
 /* !!!-------------footer-----------!!!! */
 .footer {
-  background-color: tomato;
-  border-radius: 0 0 15px 15px;
-  border: 3px solid white;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -547,12 +546,30 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background-color: tomato;
+  border-radius: 0 0 15px 15px;
+  padding: 20px;
+}
+@media screen and (max-width: 479px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    row-gap: 15px;
+  }
 }
 
 .footer-block {
@@ -563,9 +580,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 10px;
 }
 
 .footer-block__title {
@@ -588,30 +603,45 @@ body {
   border-radius: 25px 25px 0 0;
   padding: 15px;
   border-bottom: 0;
+  position: relative;
 }
 
 .main-info__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   gap: 12px;
+}
+@media screen and (max-width: 479px) {
+  .main-info__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 480px) {
+  .main-info__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .main-info__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 14px;
+  gap: 5px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 479px) {
+  .main-info__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 480px) {
   .main-info__item {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -623,37 +653,15 @@ body {
     gap: 15px;
   }
 }
-
-.main-info__header {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .main-info__header {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 15px;
-  }
-}
-
-.main-info__title {
+.category__title {
   color: tomato;
   font-family: "Pangolin", cursive;
-  font-size: 18px;
+  font-size: 12px;
   text-transform: uppercase;
   display: inline-block;
   background-color: white;
-  border-radius: 9px;
+  border-radius: 3px;
   padding: 3px;
-  margin-bottom: 6px;
 }
 
 .main-info__content {
@@ -671,6 +679,7 @@ body {
   font-family: "IBM Plex Mono", monospace;
   font-size: 10px;
   line-height: 1.12;
+  color: white;
   display: block;
   width: 100%;
   margin-bottom: 21px;
@@ -684,16 +693,17 @@ body {
 }
 
 .lesson-plan__container {
-  border: 3px solid tomato;
+  border-right: 3px solid tomato;
+  border-left: 3px solid tomato;
 }
 
-.esl-skills__list {
+.skills__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.esl-skills__icons {
+.skills__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,53 +714,82 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 3px;
-  width: 32px;
+  width: 42px;
   border-radius: 50%;
   border: 3px solid tomato;
   background-color: white;
 }
 
-.subjects__list {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  gap: 10px;
-}
-
-.subjects__icons {
+.skills__icons--header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
-  padding: -9px;
-  width: 32px;
-  border: 3px solid white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 22px;
+}
+
+.skills__icons--decor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  width: 82px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 15px;
   border-radius: 50%;
-  background-color: tomato;
+  border: 3px solid gray;
+  background-color: white;
 }
 
 .lesson-part__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 6px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (max-width: 479px) {
+  .lesson-part__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 480px) {
+  .lesson-part__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .lesson-part__item {
   display: block;
   margin-bottom: 15px;
-  max-width: 240px;
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .lesson-part__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lesson-part__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .lesson-part__title {

@@ -3,67 +3,103 @@
 }
 
 .lesson-plan__container{
-    border: 3px solid tomato;
+    border-right: 3px solid tomato;
+    border-left: 3px solid tomato;
 }
 
-.esl-skills__list{
+.skills__list{
     display: flex;
     
 }
 
-.esl-skills__icons{
+.skills__icons{
     display: flex;
     align-items: center;
     justify-content: center;
 
     padding: 3px;
-    width: 32px;
+    width: 42px;
     border-radius: 50%;
 border: 3px solid tomato;
 background-color: white;
 }
 
-.subjects__list{
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    margin-left: auto;
-
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-
-    // margin: 0 auto 18px auto;
-}
-.subjects__icons{
+.skills__icons--header {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
 
-    padding: -9px;
-    width: 32px;
-    border: 3px solid white;
-    border-radius: 50%;
-    background-color: tomato;
+    width: 22px;
+    // border-radius: 50%;
+    // border: 3px solid tomato;
+    // background-color: white;
 }
+
+.skills__icons--decor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 82px;
+    
+
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 15px;
+    border-radius: 50%;
+    border: 3px solid gray;
+    background-color: white;
+}
+
+// .subjects__list{
+//     // position: absolute;
+//     // top: 0;
+//     // right: 0;
+
+//     display: flex;
+//     gap: 10px;
+
+//     // margin: 0 auto 18px auto;
+// }
+// .subjects__icons{
+//     display: flex;
+//     align-items: center;
+//     gap: 10px;
+
+//     padding: -9px;
+//     width: 32px;
+//     border: 3px solid white;
+//     border-radius: 50%;
+//     background-color: tomato;
+// }
 
 .lesson-part__list{
     display: flex;
-    // flex-direction: column;
-    padding: 6px;
-    flex-wrap: wrap;
+    
     gap: 30px;
-    // @include tablet{
-    //     flex-wrap: wrap;
-    // }
+    @media screen and (max-width:479px) {
+    flex-direction: column;
+    }
+     @include mobile{
+    flex-wrap: wrap;
+    }
 }
 
 .lesson-part__item{
     display: block;
     margin-bottom: 15px;
-    max-width: 240px;
-    width: calc((100% - 60px)/3);
+    width: 100%;
+    @include tablet{
+        width: calc((100% - 30px)/2);
+    }
+    @include desktop{
+        width: calc((100% - 60px)/3);
+    }
+    
 }
+
+
 
 .lesson-part__title{
     margin-bottom: 9px;

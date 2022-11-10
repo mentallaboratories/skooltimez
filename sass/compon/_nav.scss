@@ -9,7 +9,7 @@
     border: 3px dotted black;
     background-color: tomato;
     border-radius: 25px;
-    padding: 9px;
+    padding: 6px;
 
     @include desktop{
         flex-wrap: nowrap;
@@ -35,7 +35,7 @@
     border-radius: 15px;
 
     border: 3px double black;
-    padding: 3px 15px;
+    padding: 3px 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,10 +67,9 @@
 
 .nav__link{
     font-family: 'Finger Paint', cursive;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.17;
 
-    color: black;
     &:hover, &:focus{
         color: tomato;
     }

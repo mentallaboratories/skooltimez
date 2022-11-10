@@ -1,8 +1,6 @@
 /* !!!-------------footer-----------!!!! */
 .footer {
-    background-color: tomato;
-border-radius: 0 0 15px 15px;
-border:3px solid white;
+    
 
     padding-top: 60px;
     padding-bottom: 60px;
@@ -11,14 +9,27 @@ border:3px solid white;
 
 .footer-container{
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+
+    background-color: tomato;
+    border-radius: 0 0 15px 15px;
+
+    padding: 20px;
+    
+    @media screen and (max-width:479px) {
+    flex-direction: column;
+    }
+        @include mobile {
+            flex-wrap: wrap;
+            align-items: baseline;
+                justify-content: space-between;
+                row-gap: 15px;
+        }
 }
 
 .footer-block{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 10px;
 }
 
 .footer-block__title{

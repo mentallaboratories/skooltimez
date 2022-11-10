@@ -2,20 +2,22 @@
     font-family: 'Freckle Face', cursive;
     font-weight: 600;
     color: #000000;
-    font-size: 44px;
+    font-size: 34px;
     line-height: 1.16px;
+
 }
 
 .logo__wrap {
     position: relative;
     width: 250px;
     height: 68px;
-    border-radius: 30px;
+    border-radius: 20px;
+
+    padding: 6px;
 
 
     border: 3px double black;
     
-
     display: flex;
     align-items: center;
     justify-content: center;
