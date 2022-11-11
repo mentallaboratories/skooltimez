@@ -5,11 +5,13 @@
     font-size: 34px;
     line-height: 1.16px;
 
+    
+
 }
 
 .logo__wrap {
     position: relative;
-    width: 250px;
+    // width: 250px;
     height: 68px;
     border-radius: 20px;
 
@@ -21,6 +23,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mobile__style--off {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+    @include mobile{
+        width: 250px;
+    }
 
     // &::after{
     //     content: "";

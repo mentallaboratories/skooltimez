@@ -438,7 +438,6 @@ body {
 
 .logo__wrap {
   position: relative;
-  width: 250px;
   height: 68px;
   border-radius: 20px;
   padding: 6px;
@@ -452,6 +451,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 479px) {
+  .logo__wrap {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .logo__wrap {
+    width: 250px;
+  }
 }
 
 .heading {
@@ -507,6 +517,10 @@ body {
   }
 }
 
+.nav__header {
+  width: 100%;
+}
+
 .nav__item {
   position: relative;
   border-radius: 15px;
@@ -538,6 +552,11 @@ body {
 }
 @media screen and (min-width: 480px) {
   .nav__icon {
+    width: 27px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__icon {
     width: 22px;
   }
 }
@@ -550,11 +569,16 @@ body {
 @media screen and (min-width: 480px) {
   .nav__link {
     font-family: "Finger Paint", cursive;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.17;
   }
   .nav__link:hover, .nav__link:focus {
     color: tomato;
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .nav__link {
+    font-size: 16px;
   }
 }
 
@@ -564,21 +588,27 @@ body {
   min-width: 256px;
 }
 .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  row-gap: 15px;
+  display: block;
+  width: 100%;
   padding: 15px;
   border: 3px solid tomato;
   border-radius: 25px;
+}
+@media screen and (min-width: 480px) {
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    row-gap: 15px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header__container {
@@ -669,20 +699,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
-}
-@media screen and (max-width: 479px) {
-  .main-info__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-@media screen and (min-width: 480px) {
-  .main-info__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-info__item {
@@ -724,6 +744,7 @@ body {
 
 .main-info__content {
   color: white;
+  font-size: 14px;
 }
 
 .lesson__name {
@@ -744,6 +765,35 @@ body {
   padding: 3px 12px;
   border-radius: 9px 9px 0 0;
   background-color: rgba(245, 240, 240, 0.5);
+}
+
+.main-info__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3px;
+  width: 62px;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  border-radius: 50%;
+  border: 3px solid gray;
+  background-color: white;
+}
+
+.main-info__content {
+  font-family: "IBM Plex Mono", monospace;
+  color: tomato;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: white;
+  padding: 3px;
 }
 
 .lesson-plan__section {
@@ -778,28 +828,6 @@ body {
   width: 32px;
   border-radius: 50%;
   border: 3px solid tomato;
-  background-color: white;
-}
-
-.skills__icons--decor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px;
-  width: 82px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 15px;
-  border-radius: 50%;
-  border: 3px solid gray;
   background-color: white;
 }
 
@@ -850,6 +878,7 @@ body {
   color: white;
   position: relative;
 }
+
 .lesson-part__title--active {
   background-color: white;
   display: inline-block;
@@ -858,6 +887,7 @@ body {
   padding: 5px;
   border-radius: 15px;
   font-size: 20px;
+  margin-bottom: 3px;
 }
 
 .lesson__link {
@@ -926,11 +956,15 @@ body {
 
 .part__active {
   display: block;
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 100%;
   color: white;
   text-decoration: underline;
-  font-size: 18px;
+  font-size: 12px;
+  background-color: gray;
+  padding: 3px;
 }
 
 .timetable__container {

@@ -33,22 +33,7 @@ background-color: white;
 
 
 
-.skills__icons--decor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    width: 82px;
-    
 
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    right: 15px;
-    border-radius: 50%;
-    border: 3px solid gray;
-    background-color: white;
-}
 
 // .subjects__list{
 //     // position: absolute;
@@ -114,15 +99,19 @@ background-color: white;
 
     position: relative;
 
-    &--active{
-        background-color: white;
-        display: inline-block;
-        font-family: 'Finger Paint', cursive;
-        color: tomato;
-        padding: 5px;
-        border-radius: 15px;
-        font-size: 20px;
-    }
+    
+}
+
+.lesson-part__title--active {
+    background-color: white;
+    display: inline-block;
+    font-family: 'Finger Paint', cursive;
+    color: tomato;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 20px;
+
+    margin-bottom: 3px;
 }
 
 .lesson__link{
@@ -194,13 +183,12 @@ background-color: white;
 
 .part__active{
     display: block;
-    width: 100%;
+    width:fit-content;
     height: 100%;
     color: white;
     text-decoration: underline;
-    font-size: 18px;
-}
+    font-size: 12px;
 
-.part__plan{
-     
+    background-color: gray;
+    padding: 3px;
 }
