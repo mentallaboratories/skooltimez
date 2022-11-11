@@ -65,12 +65,29 @@
    
 }
 
+.nav__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    @include mobile{
+        width: 22px;
+    }
+    
+}
+
 .nav__link{
+    @include mobile__style--off {
+        display: none;
+    }
+    @include mobile{
     font-family: 'Finger Paint', cursive;
     font-size: 16px;
     line-height: 1.17;
+    
 
     &:hover, &:focus{
         color: tomato;
     }
+}
 }

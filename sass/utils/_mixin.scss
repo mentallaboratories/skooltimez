@@ -4,6 +4,12 @@
     }
 }
 
+@mixin mobile__style--off {
+    @media screen and (max-width:479px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media screen and (min-width:768px) {
         @content;

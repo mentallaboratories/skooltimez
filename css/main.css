@@ -524,13 +524,38 @@ body {
   background-color: white;
 }
 
-.nav__link {
-  font-family: "Finger Paint", cursive;
-  font-size: 16px;
-  line-height: 1.17;
+.nav__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
 }
-.nav__link:hover, .nav__link:focus {
-  color: tomato;
+@media screen and (min-width: 480px) {
+  .nav__icon {
+    width: 22px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .nav__link {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .nav__link {
+    font-family: "Finger Paint", cursive;
+    font-size: 16px;
+    line-height: 1.17;
+  }
+  .nav__link:hover, .nav__link:focus {
+    color: tomato;
+  }
 }
 
 /* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!*/
@@ -754,19 +779,6 @@ body {
   border-radius: 50%;
   border: 3px solid tomato;
   background-color: white;
-}
-
-.skills__icons--header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 22px;
 }
 
 .skills__icons--decor {
