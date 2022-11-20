@@ -1,169 +1,99 @@
-<section class="sale">
-  <div class="container container-sale">
-    <h2 class="sale-title">Sale</h2>
+<header class="header">
+  <div class="container header__container">
+      <!--top navigation-->
+      <nav class="navigation">
+          <a class="logo" href="./index.html"><span class="accent">Web</span>Studio</a>
+          <ul class="menu">
+              <li class="menu__item"><a class="link menu__link current" href="">Студія</a></li>
+              <li class="menu__item"><a class="link menu__link" href="">Портфоліо</a></li>
+              <li class="menu__item"><a class="link menu__link" href="">Контакти</a></li>
+          </ul>
 
-    <ul class="sale-list list">
-      <li class="sale-item">
-        <a class="sale-link link" href="">
-            <picture>
-              <source
-                srcset="
-                  ./images/sale/img1-des.jpg   1x,
-                  ./images/sale/img1-desx2.jpg 2x"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="
-                  ./images/sale/img1-tab.jpg   1x,
-                  ./images/sale/img1-tabx2.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/sale/img1-mob.jpg   1x,
-                  ./images/sale/img1-mobx2.jpg 2x"
-                media="(max-width: 767px)"
-              />
-              <img
-                srcset="
-                  ./images/sale/img1-des.jpg,
-                  ./images/sale/img1-desx2.jpg"
-                src="./images/sale/img1-des.jpg"
-                alt="accessories"
-                width="285"
-              />
-            </picture>
+          
+      </nav>
+      <!--Contacts-->
+      <ul class="connect">
+          <li class="connect__item">
+              <a class="link connect__link" href="mailto:info@devstudio.com">
+                  <div class="connect__icon--mail">
+                      <svg class="connect__icon" width="14" height="10">
+                          <use href="./images/icon.svg#icon-header-envelope">
+                      
+                          </use>
+                      </svg>
+                  </div>
+                  info@devstudio.com
+              </a>
+          </li>
+          <li class="connect__item">
+              <a class="link connect__link" href="tel:+380961111111">
+                  <div class="connect__icon--mobile">
+                      <svg class="connect__icon" width="10" height="14">
+                          <use href="./images/icon.svg#icon-header-smartphone">
+                      
+                          </use>
+                      </svg> 
+                  </div>
+                  
+                  +38 096 111 11 11
+              </a>
+          </li>
+      </ul>
 
-            <div class="sale-thumb">
-              <h3 class="sale-subtitle">Xiberia K9 PRO PC Headset</h3>
-              <div class="sale-desk">
-                <p class="sale-text">65.14 USD</p>
-                <p class="sale-price">55.14 USD</p>
-              </div>
-            </div>
-        </a>
-      </li>
-      <li class="sale-item">
-        <a class="sale-link link" href="">
-            <source
-                srcset="
-                  ./images/sale/img5-des.jpg   1x,
-                  ./images/sale/img5-desx2.jpg 2x"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="
-                  ./images/sale/img3-tab.jpg   1x,
-                  ./images/sale/img3-tabx2.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/sale/img2-mob.jpg   1x,
-                  ./images/sale/img2-mobx2.jpg 2x"
-                media="(max-width: 767px)"
-              />
-              <img
-                srcset="
-                  ./images/sale/img5-des.jpg,
-                  ./images/sale/img5-desx2.jpg"
-                src="./images/sale/img5-des.jpg"
-                alt="accessories"
-                width="285"
-              />
-            </picture>
-            <div class="sale-thumb">
-              <h3 class="sale-subtitle">RGB LED Backlit Mechanical Keyboard</h3>
-              <div class="sale-desk">
-                <p class="sale-text">156.00 USD</p>
-                <p class="sale-price">116.00 USD</p>
-              </div>
-            </div>
-            
-        </a>
-      </li>
-      <li class="sale-item">
-        <a class="sale-link link" href="">
-          
-            <source
-                srcset="
-                  ./images/sale/img3-des.jpg   1x,
-                  ./images/sale/img3-desx2.jpg 2x"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="
-                  ./images/sale/img5-tab.jpg   1x,
-                  ./images/sale/img5-tabx2.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/sale/img3-mob.jpg   1x,
-                  ./images/sale/img3-mobx2.jpg 2x"
-                media="(max-width: 767px)"
-              />
-              <img
-                srcset="
-                  ./images/sale/img3-des.jpg,
-                  ./images/sale/img3-desx2.jpg"
-                src="./images/sale/img3-des.jpg"
-                alt="accessories"
-                width="285"
-              />
-            </picture>
-            <div class="sale-thumb">
-              <h3 class="sale-subtitle">G95 Light Surround Gaming Headset</h3>
-              <div class="sale-desk">
-                <p class="sale-text">78.98 USD</p>
-                <p class="sale-price">50.98 USD</p>
-              </div>
-            </div>
-            
-        </a>
-      </li>
-      <li class="sale-item">
-        <a class="sale-link link" href="">
-          
-            <source
-                srcset="
-                  ./images/sale/img7-des.jpg   1x,
-                  ./images/sale/img7-desx2.jpg 2x"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="
-                  ./images/sale/img7-tab.jpg   1x,
-                  ./images/sale/img7-tabx2.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/sale/img4-mob.jpg   1x,
-                  ./images/sale/img4-mobx2.jpg 2x"
-                media="(max-width: 767px)"
-              />
-              <img
-                srcset="
-                  ./images/sale/img7-des.jpg,
-                  ./images/sale/img7-desx2.jpg"
-                src="./images/sale/img7-des.jpg"
-                alt="accessories"
-                width="285"
-              />
-            </picture>
-            <div class="sale-thumb">
-              <h3 class="sale-subtitle">
-              Malloom 1200 DPI 2.4Ghz Wireless Mouse
-              </h3>
-              <div class="sale-desk">
-                <p class="sale-text">44.24 USD</p>
-                <p class="sale-price">29.93 USD</p>
-              </div>   
-            </div>
-        </a>
-      </li>
-    </ul>
-    <button type="button" class="sale-btn">View all</button>
+      <button type="button" class="mob-menu__btn--open" data-popup-open>
+          <svg  width="24" height="16">
+              <use href="./images/icon.svg#icon__menu--open"></use>
+          </svg>
+      </button>
   </div>
-</section>
+  <!-- pop-up menu -->
+  <div class="mob-modal is-hidden" data-popup>
+      <button type="button" class="mob-menu__btn--close" data-popup-close>
+          <!-- <svg width="24" height="16">
+              <use href="./images/icon.svg#icon__menu--close"></use>
+          </svg> -->
+      </button>
+      <!-- <ul class="mob-menu__nav">
+          <li class="mob-menu__item"><a class="link mob-menu__link current" href="./index.html">Студія</a></li>
+          <li class="mob-menu__item"><a class="link mob-menu__link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="mob-menu__item"><a class="link mob-menu__link" href="">Контакти</a></li> 
+      </ul>
+      <div class="mob-bottom">
+          <ul class="mob-connect">
+              <li class="mob-connect__item">
+                  <a class="link mob-connect__link--phone" href="tel:+380961111111">
+                      +38 096 111 11 11
+                  </a>
+              </li>
+              <li class="mob-connect__item">
+                  <a class="link mob-connect__link" href="mailto:info@devstudio.com">
+                      info@devstudio.com
+                  </a>
+              </li>
+          </ul>
+          <ul class="mob-social">
+              <li class="mob-social__item">
+                  <a href="" class="link mob-social__link">
+                      Instagram
+                  </a>
+              </li>
+              <li class="mob-social__item">
+                  <a href="" class="link mob-social__link">
+                      Twitter
+                  </a>
+              </li>
+              <li class="mob-social__item">
+                  <a href="" class="link mob-social__link">
+                      Facebook
+                  </a>
+              </li>
+              <li class="mob-social__item">
+                  <a href="" class="link mob-social__link">
+                      LinkedIn
+                  </a>
+              </li>
+          </ul>
+      </div>
+      
+  </div>
+</header>
