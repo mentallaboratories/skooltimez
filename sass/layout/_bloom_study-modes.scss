@@ -1,20 +1,59 @@
 .bloom{
     padding: 3px 16px;
     display: block;
-    width: calc((100% - 20px)/2);
+    width: calc((100% - 20px)/3);
 
-    border: 5px solid white;
-    border-radius: 20px;
+    border: 3px solid white;
+    border-radius: 10px;
     border-style: outset;
+}
+
+.bloom-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    margin-bottom: 16px;
+}
+
+.thumb{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.aim{
+    font-family: "Finger Paint",cursive;
+    font-size: 16px;
+    line-height: 1.17;
+}
+
+.section-title{
+    font-family: "Freckle Face",cursive;
+    font-weight: 600;
+    color: #000;
+    font-size: 32px;
+    line-height: 1.36;
+
+    display: flex;
+
+    padding: 5px;
+    
+}
+
+.info{
+    display: block;
 }
 
 .bloom-routines{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .remember__mode{
-    background-color: purple;
+    background-color: rgb(235, 66, 235);
 }
 
 .understand__mode{

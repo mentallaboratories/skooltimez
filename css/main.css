@@ -565,14 +565,40 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 12px;
+  padding-left: 7px;
+  width: 95px;
+  height: 95px;
+  border: 1px solid red;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.vidget.learn {
+  background-image: url(../images/vidget/learn.png);
+}
+
+.done {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 55px;
-  height: 55px;
-  border: 1px solid red;
-  border-radius: 10px;
-  background-color: tomato;
+  width: 35px;
+  height: 35px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/status-icons/complete.png);
 }
 
 /* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!*/
@@ -1001,10 +1027,57 @@ body {
 .bloom {
   padding: 3px 16px;
   display: block;
-  width: calc((100% - 20px) / 2);
-  border: 5px solid white;
-  border-radius: 20px;
+  width: calc((100% - 20px) / 3);
+  border: 3px solid white;
+  border-radius: 10px;
   border-style: outset;
+}
+
+.bloom-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.aim {
+  font-family: "Finger Paint", cursive;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.section-title {
+  font-family: "Freckle Face", cursive;
+  font-weight: 600;
+  color: #000;
+  font-size: 32px;
+  line-height: 1.36;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+.info {
+  display: block;
 }
 
 .bloom-routines {
@@ -1013,10 +1086,12 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .remember__mode {
-  background-color: purple;
+  background-color: rgb(235, 66, 235);
 }
 
 .understand__mode {
