@@ -1,94 +1,80 @@
 .nav{
     position: relative;
     display: flex;
+    flex-direction: column;
     gap: 15px;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-
-    border: 3px dotted black;
-    background-color: tomato;
-    border-radius: 25px;
-    padding: 6px;
 
     @include desktop{
-        flex-wrap: nowrap;
+        flex-direction: row;
     }
-
-    // &::before{
-    //     content: "";
-    //     display: block;
-    //     width: 116px;
-
-    //     position: absolute;
-    //     top: 50%;
-    //     left: -116px;
-    //     translate: 0 -50%;
-        
-
-    //     border-bottom: 3px dotted black;
-    // }
+  
 }
 
 .nav__item{
     position: relative;
-    border-radius: 15px;
+    display: none;
+  @include tablet{
+  
+    border-radius: 12px;
+    padding: 1px 3px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgba($color: white, $alpha: 0.7);
+   }
 
-    border: 3px double black;
-    padding: 3px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   @include desktop{
+    
+    flex-direction: row;
+    border: 1px single gray;
+    
+ }
+
+}
+
+.mob-menu-btn{
+    display: inline-block;
+    padding: 3px;
+
+    width: 48px;
+    height: 48px;
 
     background-color: white;
-    // flex-wrap: wrap;
 
-    // @include desktop{
-    //     flex-wrap: nowrap;
-    // }
 
-    // &::before{
-    //     content: "";
-    //     display: block;
-    //     width: 16px;
-
-    //     position: absolute;
-    //     top: 50%;
-    //     left: -18px;
-    //     translate: 0 -50%;
-        
-
-    //     border-bottom: 3px solid black;
-    // }
-
+    @include tablet{
+        display: none;
+    }
+}
 
    
-}
+
 
 .nav__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    @include mobile{
-        width: 22px;
+    width: 35px;
+    @include tablet{
+        width: 40px;
+    }
+    @include desktop{
+        // width: 36px;
     }
     
 }
 
 .nav__link{
-    @include mobile__style--off {
-        display: none;
+    @include desktop__style--off {
+    display: none;
     }
-    @include mobile{
+    @include tablet{
     font-family: 'Finger Paint', cursive;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.17;
-    
-
-    &:hover, &:focus{
-        color: tomato;
-    }
+    color: tomato;
 }
 }
 

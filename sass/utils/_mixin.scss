@@ -10,6 +10,18 @@
     }
 }
 
+@mixin tablet__style--off {
+    @media screen and (max-width:767px) {
+        @content;
+    }
+}
+
+@mixin desktop__style--off {
+    @media screen and (max-width:1199px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media screen and (min-width:768px) {
         @content;

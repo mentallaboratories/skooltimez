@@ -1,28 +1,61 @@
 /* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!*/
 .header {
-    height: auto;
+    margin: 0 auto;
+    padding: 6px;
+
+    height: 200px;
     min-width: 256px;
+
+    background:  url(../images/map-bg.jpg), linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,121,9,0.7) 21%, rgba(13,83,5,1) 100%),
+    ;
+    
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -50px, 0px 0px;
+    width: 100%;
+
+    display: flex;
+    align-items: baseline;
+    @include tablet{
+        height: 250px;
+    }
+    
    
     @include desktop{
-        // height: 100px;
+        
+         height: 300px;
     }
            
 }
 
 .header__container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display: block;
+   width: 100%;
+   height: 100%;
+
+    // padding: 5px;
+
+    // border: 1px solid tomato;
+    // border-radius: 25px;
+
+}
+
+.guide__bg{
+    
+    
+    @include mobile{
+        
+        display: flex;
+    align-items:center;
     justify-content:space-between;
-    row-gap: 15px;
-
-    padding: 15px;
-
-    border: 3px solid tomato;
-    border-radius: 25px;
-    @include desktop{
-        flex-wrap: nowrap;
     }
+
+    @include tablet{
+        align-items:baseline;
+    }
+
+
 }
 
 .header__img{

@@ -1,40 +1,46 @@
 .logo {
     font-family: 'Freckle Face', cursive;
     font-weight: 600;
-    color: #000000;
-    font-size: 34px;
+    color: gray;
+    font-size: 40px;
     line-height: 1.16px;
+    display: inline-block;
+
+   @include tablet{
+        font-size: 50px;
+    }
 
 }
 
 .logo__wrap {
     position: relative;
-    width: 250px;
-    height: 68px;
-    border-radius: 20px;
-
-    padding: 6px;
-
-
-    border: 3px double black;
-    
+    // width: 250px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    height: 47px;
 
-    // &::after{
-    //     content: "";
-    //     display: block;
-    //     width: 160px;
+    padding: 3px;
+    padding-left: 47px;
+    border-radius: 10px;
+    border: 3px solid white;
+    background-color: rgba($color: white, $alpha: 0.5);
+    background-image: url(../images/layout/smphone.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 5px;
 
-    //     position: absolute;
-    //     top: 50%;
-    //     right: -160px;
-    //     translate: 3px -50%;
-        
+    @include tablet{
+        height: 57px;
+        padding-left: 47px;
+        // width: 270px;
+        background-image: url(../images/layout/tab.jpg);
+    }
 
-    //     border-bottom: 3px dotted black;
-    // }
+    @include desktop{
+       
+        background-image: url(../images/layout/comp-pc.png);
+    }
+
 }
 
 .heading{
