@@ -415,16 +415,78 @@ body {
   }
 }
 
-.section__title {
-  font-size: 28px;
-  line-height: 1.17;
-  text-align: center;
-  color: #212121;
-  margin-bottom: 50px;
+.flex-row {
+  display: block;
 }
-@media screen and (min-width: 1200px) {
-  .section__title {
-    font-size: 36px;
+@media screen and (min-width: 768px) {
+  .flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 35px;
+  }
+}
+
+.section-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.section-thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .section-thumb {
+    width: 45%;
+  }
+}
+
+.section-aim {
+  font-family: "Finger Paint", cursive;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.section-title {
+  font-family: "Freckle Face", cursive;
+  font-weight: 600;
+  color: #000;
+  font-size: 32px;
+  line-height: 1.36;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+.section-info {
+  display: block;
+}
+
+.section__image--xxl {
+  display: block;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .section__image--xxl {
+    width: 45%;
   }
 }
 
@@ -556,6 +618,42 @@ body {
   .nav__link:hover, .nav__link:focus {
     color: tomato;
   }
+}
+
+.gservices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+}
+
+.gservices-wra {
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+
+.gdisk-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.nav__link--gdisk {
+  display: block;
+  height: 18px;
+  border-radius: 3px;
+  background-color: gray;
+  color: white;
+  padding: 3px 5px;
+  font-size: 12px;
+  line-height: 1.12;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .vidget {
@@ -805,6 +903,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.title__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3px;
+  width: 62px;
+  border-radius: 3px;
+  border: 3px solid tomato;
+  background-color: tomato;
+  margin-right: 25px;
 }
 
 .skills__icons {
@@ -819,6 +938,7 @@ body {
           justify-content: center;
   padding: 3px;
   width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 3px solid tomato;
   background-color: white;
@@ -1031,53 +1151,6 @@ body {
   border: 3px solid white;
   border-radius: 10px;
   border-style: outset;
-}
-
-.bloom-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-
-.thumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 8px;
-}
-
-.aim {
-  font-family: "Finger Paint", cursive;
-  font-size: 16px;
-  line-height: 1.17;
-}
-
-.section-title {
-  font-family: "Freckle Face", cursive;
-  font-weight: 600;
-  color: #000;
-  font-size: 32px;
-  line-height: 1.36;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5px;
-}
-
-.info {
-  display: block;
 }
 
 .bloom-routines {
