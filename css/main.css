@@ -493,10 +493,11 @@ body {
 .logo {
   font-family: "Freckle Face", cursive;
   font-weight: 600;
-  color: gray;
+  color: black;
   font-size: 40px;
   line-height: 1.16px;
   display: inline-block;
+  text-shadow: 2px 2px #FF0000;
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -749,12 +750,7 @@ body {
   padding: 6px;
   height: 200px;
   min-width: 256px;
-  background: url(../images/map-bg.jpg), -webkit-gradient(linear, left top, right top, from(rgb(2, 0, 36)), color-stop(21%, rgba(22, 121, 9, 0.7)), to(rgb(13, 83, 5)));
-  background: url(../images/map-bg.jpg), linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(22, 121, 9, 0.7) 21%, rgb(13, 83, 5) 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px -50px, 0px 0px;
-  width: 100%;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,14 +769,37 @@ body {
   }
 }
 
+.guide__bg {
+  background: url(../images/map-bg.jpg), -webkit-gradient(linear, left top, right top, from(rgb(2, 0, 36)), color-stop(21%, rgba(22, 121, 9, 0.7)), to(rgb(13, 83, 5)));
+  background: url(../images/map-bg.jpg), linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(22, 121, 9, 0.7) 21%, rgb(13, 83, 5) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home__bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url(../images/layout/home.png), -webkit-gradient(linear, left top, right top, from(rgb(2, 0, 36)), color-stop(21%, rgba(22, 121, 9, 0.7)), to(rgb(13, 83, 5)));
+  background: url(../images/layout/home.png), linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(22, 121, 9, 0.7) 21%, rgb(13, 83, 5) 100%);
+}
+
+.timetable__bg {
+  background-repeat: no-repeat;
+  background-position: 0 150px;
+  background: url(../images/layout/study.png);
+  background-size: contain;
+}
+
 .header__container {
   display: block;
   width: 100%;
   height: 100%;
+  display: block;
 }
-
 @media screen and (min-width: 480px) {
-  .guide__bg {
+  .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -793,7 +812,7 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .guide__bg {
+  .header__container {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
