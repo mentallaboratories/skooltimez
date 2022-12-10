@@ -3,8 +3,10 @@
     margin: 0 auto;
     padding: 6px;
 
-    height: 200px;
+    height: 90px;
     min-width: 256px;
+
+    background-color: rgb(122, 76, 6);
 
   
     max-width: 1200px;
@@ -12,13 +14,13 @@
     display: flex;
     align-items: baseline;
     @include tablet{
-        height: 350px;
+        //height: 350px;
     }
     
    
     @include desktop{
         
-         height: 450px;
+         //height: 450px;
     }
            
 }

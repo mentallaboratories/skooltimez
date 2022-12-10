@@ -810,8 +810,9 @@ body {
 .header {
   margin: 0 auto;
   padding: 6px;
-  height: 200px;
+  height: 90px;
   min-width: 256px;
+  background-color: rgb(122, 76, 6);
   max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -820,17 +821,6 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-@media screen and (min-width: 768px) {
-  .header {
-    height: 350px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header {
-    height: 450px;
-  }
-}
-
 .guide__bg {
   background: url(../images/map-bg.jpg), -webkit-gradient(linear, left top, right top, from(rgb(2, 0, 36)), color-stop(21%, rgba(22, 121, 9, 0.7)), to(rgb(13, 83, 5)));
   background: url(../images/map-bg.jpg), linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(22, 121, 9, 0.7) 21%, rgb(13, 83, 5) 100%);
@@ -891,6 +881,56 @@ body {
 .header__img {
   width: 151px;
   height: 30px;
+}
+
+.hero {
+  margin: 0 auto;
+  padding: 6px;
+  width: 100%;
+  height: 290px;
+  min-width: 256px;
+  max-width: 1200px;
+  display: block;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+}
+
+.hero__container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 /* !!!-------------footer-----------!!!! */
