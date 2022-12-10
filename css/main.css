@@ -744,6 +744,68 @@ body {
   background-image: url(../images/status-icons/complete.png);
 }
 
+/* !!!-------------footer-----------!!!! */
+.skillbox {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.skillbox-img {
+  width: 50%;
+}
+
+.skillbox-container {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: tomato;
+  border-radius: 0 0 15px 15px;
+  padding: 30px 15px;
+  gap: 30px;
+}
+@media screen and (max-width: 479px) {
+  .skillbox-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 480px) {
+  .skillbox-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    row-gap: 15px;
+  }
+}
+
+.skillbox-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.skillbox-block__title {
+  display: inline-block;
+  width: 150px;
+  color: black;
+  font-weight: 14px;
+  letter-spacing: 1px;
+  font-family: "Pangolin", cursive;
+}
+
 /* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!*/
 .header {
   margin: 0 auto;
@@ -760,37 +822,43 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header {
-    height: 250px;
+    height: 350px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    height: 300px;
+    height: 450px;
   }
 }
 
 .guide__bg {
   background: url(../images/map-bg.jpg), -webkit-gradient(linear, left top, right top, from(rgb(2, 0, 36)), color-stop(21%, rgba(22, 121, 9, 0.7)), to(rgb(13, 83, 5)));
   background: url(../images/map-bg.jpg), linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(22, 121, 9, 0.7) 21%, rgb(13, 83, 5) 100%);
-  background-size: cover;
+  background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .home__bg {
-  background-size: 1200px;
+  background-size: 100vw;
   background-repeat: no-repeat;
   background-position: left bottom;
-  background: url(../images/layout/home.png), -webkit-gradient(linear, left top, right top, from(rgb(2, 0, 36)), color-stop(21%, rgba(22, 121, 9, 0.7)), to(rgb(13, 83, 5)));
-  background: url(../images/layout/home.png), linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(22, 121, 9, 0.7) 21%, rgb(13, 83, 5) 100%);
+  background-image: url(../images/layout/layout-lesson.png);
 }
 
 .timetable__bg {
-  background-size: 1200px;
+  background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center 150px;
   background: url(../images/layout/study.png);
   background-size: cover;
+}
+
+.storage__bg {
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-image: url(../images/layout/storage.jpg);
 }
 
 .header__container {

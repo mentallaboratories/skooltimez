@@ -12,31 +12,30 @@
     display: flex;
     align-items: baseline;
     @include tablet{
-        height: 250px;
+        height: 350px;
     }
     
    
     @include desktop{
         
-         height: 300px;
+         height: 450px;
     }
            
 }
 
 .guide__bg{
     background:  url(../images/map-bg.jpg), linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,121,9,0.7) 21%, rgba(13,83,5,1) 100%);
-    background-size: cover;
+    background-size: 100vw;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 
 .home__bg{
-    background-size: 1200px;
+    background-size:100vw;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background:  url(../images/layout/home.png), linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,121,9,0.7) 21%, rgba(13,83,5,1) 100%),
-    ;
+    background-image:  url(../images/layout/layout-lesson.png);
     
    
   
@@ -44,13 +43,22 @@
 
 
 .timetable__bg{
-    background-size: 1200px;
+    background-size: 100vw;
     background-repeat: no-repeat;
     background-position: center 150px;
     background:  url(../images/layout/study.png);
     background-size: cover;
 }
 
+.storage__bg{
+    background-size:100vw;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-image:  url(../images/layout/storage.jpg);
+    
+   
+  
+}
 
 .header__container{
     display: block;
