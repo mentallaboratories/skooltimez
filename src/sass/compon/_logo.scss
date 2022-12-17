@@ -1,10 +1,23 @@
+.logo__wrap {
+    // display: block;
+    // position: relative;
+    width: 220px;
+    height: auto;
+    display: inline-block;
+    //padding: 3px;
+    border-radius: 10px;
+    
+}
+
+
+
 .logo {
     font-family: 'Freckle Face', cursive;
     font-weight: 600;
-    color: #000000;
-    font-size: 34px;
-    line-height: 1.16px;
+    color:  rgb(32, 20, 2);
+    font-size: 35px;
 
+<<<<<<< HEAD:src/sass/compon/_logo.scss
     
 
 }
@@ -31,21 +44,61 @@
     @include mobile{
         width: 250px;
     }
+=======
+    line-height: 1.16;
+    display: inline-block;
+    text-align: justify;
+    position: relative;
+    
+    
+    width: auto;
+    height: auto;
+    margin-left: 55px;
+    text-shadow: 2px 2px rgb(243, 208, 9);
+>>>>>>> skooltimez/backup:sass/compon/_logo.scss
 
-    // &::after{
-    //     content: "";
-    //     display: block;
-    //     width: 160px;
+    &:hover, &:focus{
+    color:  orangered;
+   
+    }   
 
-    //     position: absolute;
-    //     top: 50%;
-    //     right: -160px;
-    //     translate: 3px -50%;
-        
+    &::before{
+        content: "";
 
-    //     border-bottom: 3px dotted black;
-    // }
+        z-index: 0;
+
+        position: absolute;
+        top: -10px;
+        left: -60px;
+
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+
+       
+        border-radius: 50%;
+      //  background-color: white;
+        background-image: url(../images/layout/smphone.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        @include tablet{
+            font-size: 50px;
+            background-image: url(../images/layout/tab.jpg);
+        }
+    
+        @include desktop  {
+            background-image: url(../images/layout/comp-pc.png);
+        }
+    }
+
+   
+
 }
+
+
+
+
 
 .heading{
     font-family: 'Freckle Face', cursive;
@@ -63,4 +116,4 @@
 
 .fancy{
      font-family: 'Finger Paint', cursive;
- }
+}

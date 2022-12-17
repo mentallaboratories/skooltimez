@@ -354,19 +354,19 @@ img {
 }
 
 .accent {
-  color: tomato;
+  color: orangered;
 }
 
 .current {
-  color: tomato;
-  border: 3px solid white;
-  background-color: gray;
+  color: grey;
+  border: 3px solid tomato;
+  background-color: white;
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #AFB1B8;
   font-family: "Montserrat";
-  color: #757575;
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -415,19 +415,19 @@ body {
   }
 }
 
-.section__title {
-  font-size: 28px;
-  line-height: 1.17;
-  text-align: center;
-  color: #212121;
-  margin-bottom: 50px;
+.flex-row {
+  display: block;
 }
-@media screen and (min-width: 1200px) {
-  .section__title {
-    font-size: 36px;
+@media screen and (min-width: 768px) {
+  .flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 35px;
   }
 }
 
+<<<<<<< HEAD:src/sass/main.css
 .logo {
   font-family: "Freckle Face", cursive;
   font-weight: 600;
@@ -442,15 +442,120 @@ body {
   border-radius: 20px;
   padding: 6px;
   border: 3px double black;
+=======
+.section-header {
+>>>>>>> skooltimez/backup:css/main.css
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.section-thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .section-thumb {
+    width: 45%;
+  }
+}
+
+.section-aim {
+  font-family: "Finger Paint", cursive;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.section-title {
+  font-family: "Freckle Face", cursive;
+  font-weight: 600;
+  color: #000;
+  font-size: 32px;
+  line-height: 1.36;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+.section-info {
+  display: block;
+}
+
+.section__image--xxl {
+  display: block;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .section__image--xxl {
+    width: 45%;
+  }
+}
+
+.logo__wrap {
+  width: 220px;
+  height: auto;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.logo {
+  font-family: "Freckle Face", cursive;
+  font-weight: 600;
+  color: rgb(32, 20, 2);
+  font-size: 35px;
+  line-height: 1.16;
+  display: inline-block;
+  text-align: justify;
+  position: relative;
+  width: auto;
+  height: auto;
+  margin-left: 55px;
+  text-shadow: 2px 2px rgb(243, 208, 9);
+}
+.logo:hover, .logo:focus {
+  color: orangered;
+}
+.logo::before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  top: -10px;
+  left: -60px;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-image: url(../images/layout/smphone.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .logo::before {
+    font-size: 50px;
+    background-image: url(../images/layout/tab.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo::before {
+    background-image: url(../images/layout/comp-pc.png);
+  }
 }
 @media screen and (max-width: 479px) {
   .logo__wrap {
@@ -503,20 +608,36 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  border: 3px dotted black;
-  background-color: tomato;
-  border-radius: 25px;
-  padding: 6px;
+}
+.nav__item {
+  position: relative;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav__item {
+    border-radius: 12px;
+    padding: 1px 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
 }
 @media screen and (min-width: 1200px) {
-  .nav {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+  .nav__item {
+    border: 1px single gray;
+    background-color: transparent;
   }
 }
 
+<<<<<<< HEAD:src/sass/main.css
 .nav__header {
   width: 100%;
 }
@@ -526,16 +647,12 @@ body {
   border-radius: 15px;
   border: 3px double black;
   padding: 3px 5px;
+=======
+.mob-menu-list {
+>>>>>>> skooltimez/backup:css/main.css
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: white;
 }
 
 .nav__icon {
@@ -548,31 +665,36 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 32px;
+  width: 35px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .nav__icon {
+<<<<<<< HEAD:src/sass/main.css
     width: 27px;
   }
 }
 @media screen and (min-width: 768px) {
   .nav__icon {
     width: 22px;
+=======
+    width: 40px;
+>>>>>>> skooltimez/backup:css/main.css
   }
 }
-
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1199px) {
   .nav__link {
     display: none;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .nav__link {
     font-family: "Finger Paint", cursive;
+<<<<<<< HEAD:src/sass/main.css
     font-size: 12px;
+=======
+    font-size: 18px;
+>>>>>>> skooltimez/backup:css/main.css
     line-height: 1.17;
-  }
-  .nav__link:hover, .nav__link:focus {
     color: tomato;
   }
 }
@@ -582,12 +704,345 @@ body {
   }
 }
 
+.gservices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+}
+
+.gservices-wra {
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+
+.gdisk-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.nav__link--gdisk {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .nav__link--gdisk {
+    display: block;
+    height: 18px;
+    border-radius: 3px;
+    color: white;
+    padding: 3px 5px;
+    font-size: 12px;
+    line-height: 1.12;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+.vidget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 12px;
+  padding-left: 7px;
+  width: 95px;
+  height: 95px;
+  border: 1px solid red;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.vidget.learn {
+  background-image: url(../images/vidget/learn.png);
+}
+
+.done {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/status-icons/complete.png);
+}
+
+/* !!!-------------footer-----------!!!! */
+.skillbox {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.skillbox-img {
+  width: 50%;
+}
+
+.skillbox-container {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: tomato;
+  border-radius: 0 0 15px 15px;
+  padding: 30px 15px;
+  gap: 30px;
+}
+@media screen and (max-width: 479px) {
+  .skillbox-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 480px) {
+  .skillbox-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    row-gap: 15px;
+  }
+}
+
+.skillbox-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.skillbox-block__title {
+  display: inline-block;
+  width: 150px;
+  color: black;
+  font-weight: 14px;
+  letter-spacing: 1px;
+  font-family: "Pangolin", cursive;
+}
+
+.menu-btn {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3px;
+  width: 58px;
+  height: 58px;
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.menu-icon {
+  font-size: 12px;
+  width: 45px;
+  height: 45px;
+  stroke: rgb(243, 208, 9);
+  fill: rgb(32, 20, 2);
+}
+.menu-icon:hover, .menu-icon:focus {
+  fill: orangered;
+}
+
+.mob-menu-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3px;
+  width: 38px;
+  height: 38px;
+}
+
+.mob-menu-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  fill: rgb(243, 208, 9);
+  stroke: rgb(32, 20, 2);
+}
+.mob-menu-icon:hover, .mob-menu-icon:focus {
+  stroke: white;
+  fill: orangered;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.symbols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3px;
+  width: 20px;
+}
+
+.symbol-icon {
+  display: inline-block;
+  width: 18px;
+  fill: rgb(243, 208, 9);
+}
+.symbol-icon:hover, .symbol-icon:focus {
+  fill: rgb(32, 20, 2);
+}
+
+.sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3px;
+  width: 78px;
+  height: 78px;
+}
+
+.sign-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  fill: rgb(245, 243, 239);
+  stroke: orangered;
+  stroke-width: 2px;
+}
+.sign-icon:hover, .sign-icon:focus {
+  stroke: white;
+  fill: orangered;
+}
+
+.routine-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3px;
+  width: 58px;
+  height: 58px;
+}
+
+.routine-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  fill: rgb(243, 208, 9);
+}
+.routine-icon:hover, .routine-icon:focus {
+  fill: rgb(32, 20, 2);
+}
+
 /* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!*/
 .header {
-  height: auto;
+  margin: 0 auto;
+  padding: 16px 0 6px 0;
+  width: 100%;
+  height: inherit;
   min-width: 256px;
+  background-color: rgb(122, 76, 6);
+  max-width: 1200px;
+  display: block;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    height: 90px;
+  }
+}
+.guide__bg {
+  background: url(../images/map-bg.jpg), -webkit-gradient(linear, left top, right top, from(rgb(2, 0, 36)), color-stop(21%, rgba(22, 121, 9, 0.7)), to(rgb(13, 83, 5)));
+  background: url(../images/map-bg.jpg), linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(22, 121, 9, 0.7) 21%, rgb(13, 83, 5) 100%);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home__bg {
+  background-size: 460px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/layout/bookshelf.png);
+}
+@media screen and (min-width: 768px) {
+  .home__bg {
+    background-size: 760px;
+    background-image: url(../images/layout/layout-lesson.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home__bg {
+    background-size: 1200px;
+    background-image: url(../images/layout/study.png);
+  }
+}
+
+.timetable__bg {
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: center 150px;
+  background: url(../images/layout/study.png);
+  background-size: cover;
+}
+
+.storage__bg {
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-image: url(../images/layout/storage.jpg);
+}
+
 .header__container {
+<<<<<<< HEAD:src/sass/main.css
   display: block;
   width: 100%;
   padding: 15px;
@@ -611,9 +1066,30 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 480px) {
+>>>>>>> skooltimez/backup:css/main.css
   .header__container {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -622,17 +1098,73 @@ body {
   height: 30px;
 }
 
+.hero-section {
+  margin: 0 auto;
+  padding: 6px;
+  width: 100%;
+  height: 490px;
+  min-width: 256px;
+  max-width: 1200px;
+  display: block;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    height: 460px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    height: 600px;
+  }
+}
+
+.hero__container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.hero-content {
+  display: block;
+  width: 1200px;
+  height: 800px;
+}
+
 /* !!!-------------footer-----------!!!! */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: rgb(122, 76, 6);
 }
 
 .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: tomato;
   border-radius: 0 0 15px 15px;
   padding: 30px 15px;
   gap: 30px;
@@ -812,6 +1344,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.title__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3px;
+  width: 62px;
+  border-radius: 3px;
+  border: 3px solid tomato;
+  background-color: tomato;
+  margin-right: 25px;
 }
 
 .skills__icons {
@@ -826,6 +1379,7 @@ body {
           justify-content: center;
   padding: 3px;
   width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 3px solid tomato;
   background-color: white;
@@ -1013,4 +1567,62 @@ body {
   margin-bottom: 5px;
   color: black;
   font-size: 14px;
+}
+
+.bloom {
+  padding: 3px 16px;
+  display: block;
+  width: calc((100% - 20px) / 3);
+  border: 3px solid white;
+  border-radius: 10px;
+  border-style: outset;
+}
+
+.bloom-routines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.remember__mode {
+  background-color: rgb(235, 66, 235);
+}
+
+.understand__mode {
+  background-color: blue;
+}
+
+.apply__mode {
+  background-color: green;
+}
+
+.analize__mode {
+  background-color: yellow;
+}
+
+.evaluate__mode {
+  background-color: orange;
+}
+
+.create__mode {
+  background-color: tomato;
+}
+
+.routine-title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.16;
+  color: gray;
+}
+
+.mode-routines {
+  padding: 3px 16px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  line-height: 1.1;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
