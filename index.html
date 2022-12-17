@@ -18,54 +18,67 @@
     <div class="container ">
         <div class="header__container">
             
-                <div class="logo__wrap">
-                    <a class="logo" href="./index.html"><span class="accent">Skool</span>Timez</a>
-                </div>
+
+                    <a class="logo" href="./index.html" alt="Go home">
+                        <span class="accent">Skool</span>Timez
+                    </a>
                 
                 <nav class="header__nav">
                     
                     <ul class="nav">
                         
                         <li class="nav__item current">
-                            <a class="nav__item"  href="./index.html">
-                            <div class="nav__icon">
-                                <img src="./images/vidget/nav-home.png" width="35">
-                            </div>
+                            <a class="nav__item"  href="./index.html" alt="Home page">
+                                <div class="nav__icon">
+                                    <svg class=".mob-menu-icon" width="48" height="48">
+                                        <use href="../images/icon.svg#icon-home"></use>
+                                    </svg>
+                                </div>
                             <span class="nav__link--gdisk">./index.html</span></a></li>
 
 
                         <li class="nav__item">
-                            <a href="./timetable.html" class="nav__item">
-                            <div class="nav__icon">
-                                <img src="./images/vidget/nav-time-tab.png" width="85">
-                            </div>
-                            <span class="nav__link--gdisk" alt="My timetable">./timetable.html</span>
+                            <a href="./timetable.html" class="nav__item" alt="My timetable">
+                                <div class="nav__icon">
+                                    <svg class=".mob-menu-icon" width="48" height="48">
+                                        <use href="../images/icon.svg#icon-planning"></use>
+                                    </svg>
+                                </div>
+                            <span class="nav__link--gdisk" >./timetable.html</span>
                              </a>
                         </li>
                         <li class="nav__item">
-                            <div class="nav__icon">
-                                <img src="./images/vidget/nav-guide.png" width="35">
-                            </div>
                             <a href="./guide.html"
-                            class="nav__link--gdisk" alt="How to do instruction" target="_blank">./guide.html</a>
+                             class="nav__item" alt="How to do instruction">
+                             <div class="nav__icon">
+                                <svg class=".mob-menu-icon" width="48" height="48">
+                                    <use href="../images/icon.svg#icon-steps"></use>
+                                </svg>
+                            </div>
+                      <span class="nav__link--gdisk">./guide.html</span>   </a>
                            
                         </li>
                         <li class="nav__item">
-                            <div class="nav__icon">
-                                <img src="./images/vidget/nav-myFolder.png" width="35">
-                            </div>
                             <a href="./storage.html"
-                            class="nav__link--gdisk" alt="My timetable" target="_blank">./storage.html</a>
+                            class="nav__item" alt="My files">
+                            <div class="nav__icon">
+                                <svg class=".mob-menu-icon" width="48" height="48">
+                                    <use href="../images/icon.svg#icon-portfolio"></use>
+                                </svg>
+                            </div>
+                            <span class="nav__link--gdisk">./storage.html</span></a>
                         </li>
+                       
                         
                     </ul>
                 </nav> 
-
-                <div class="mob-menu-btn">
-                        <svg class="mob-menu-icon" width="48" height="48">
-                            <use href="../images/icons/plus.svg#icon-door-opened"></use>
-                        </svg>
+                <div class="menu-btn">
+                    <svg class="menu-icon" width="48" height="48">
+                        <use href="../images/icon.svg#icon-flower"></use>
+                    </svg>
                 </div>
+
+                
 
          
         </div>   
@@ -75,13 +88,26 @@
 
 
     <main>
-        <!-- <section class="hero home__bg">
-            <div class="hero-container ">
+        <section class="hero-section home__bg">
+            <div class="container">
                 <div class="hero-content">
 
                 </div>
             </div>
-        </section> -->
+        </section>
+        <section class="section">
+            <div class="container">
+               
+               
+
+                    
+               
+            </div>
+        </section>
+
+       
+
+
         <section class="section">
             <div class="container">
                 <div class="currentLinks">
@@ -195,25 +221,38 @@
     </main>
     <footer class="footer">
         <div class="container footer-container">
+            
             <div class="footer-block">
-                <h3 class="footer-block__title">Learning skills</h3>
-                <ul class="skills__list">
-                    <li class="skills__icons"><img src="./images/basic/studydocs.png" width="35"></li>
-                    <li class="skills__icons"><img src="./images/basic/followtimetable.png" width="35"></li>
-                    <li class="skills__icons"><img src="./images/basic/followsteps.png" width="35"></li>
-                    <li class="skills__icons"><img src="./images/basic/updateportfolio.png" width="35"></li>
+            <h3 class="footer-block__title">Road signs</h3>
+            <ul class="mob-menu-list">
+
+                <!-- learning routines -->
+                
+
+                <!-- ?????????????????????/ -->
+
+                <li>
+                    <div class="sign">
+                        <svg class="sign-icon" width="48" height="48">
+                            <use href="../images/icon.svg#icon-radiobtn"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="sign">
+                        <svg class="sign-icon" width="48" height="48">
+                            <use href="../images/icon.svg#icon-sign-triangle"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="sign">
+                        <svg class="sign-icon" width="48" height="48">
+                            <use href="../images/icon.svg#icon-chbox"></use>
+                        </svg>
+                    </div>
+                </li>
                 </ul>
-            </div>
-            <div class="footer-block">
-            <h3 class="footer-block__title">Language skills</h3>
-            <ul class="skills__list">
-                <li class="skills__icons"><img src="./images/eslskill/listening.png" width="35"></li>
-                <li class="skills__icons"><img src="./images/eslskill/speak.png" width="35"></li>
-                <li class="skills__icons"><img src="./images/eslskill/reading.png" width="35"></li>
-                <li class="skills__icons"><img src="./images/eslskill/writing.png" width="35"></li>
-                <li class="skills__icons"><img src="./images/eslskill/vocabulary.png" width="35"></li>
-                <li class="skills__icons"><img src="./images/eslskill/grammar.png" width="35"></li>
-            </ul>
             </div>
             <div class="footer-block">
             <h3 class="footer-block__title">Subject skills</h3>
@@ -225,11 +264,37 @@
             </div>
             <div class="footer-block">
                 <h3 class="footer-block__title">Learning skills</h3>
-                <ul class="skills__list">
-                    <li class="skills__icons"><img src="./images/basic/studydocs.png" width="35"></li>
-                    <li class="skills__icons"><img src="./images/basic/followtimetable.png" width="35"></li>
-                    <li class="skills__icons"><img src="./images/basic/followsteps.png" width="35"></li>
-                    <li class="skills__icons"><img src="./images/basic/updateportfolio.png" width="35"></li>
+                <ul class="mob-menu-list">
+                    <li>
+                        <div class="routine-btn">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-steps"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="routine-btn">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-head"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="routine-btn">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-gears"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="routine-btn">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-flower"></use>
+                            </svg>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
             <div class="footer-block">
@@ -244,12 +309,54 @@
                 </ul>
             </div>
             <div class="footer-block">
-                <h3 class="footer-block__title">Status</h3>
-                <!-- <ul class="skills__list">
-                    <li class="skills__icons"><img src="./images/status-icons/level-up.png" width="35"></li>
-                    <li class="skills__icons"><img src="./images/status-icons/complete.png" width="35"></li>
-                    <li class="skills__icons"><img src="./images/status-icons/award.png" width="35"></li>
-                </ul> -->
+                <h3 class="footer-block__title">Symbols</h3>
+                <ul class="mob-menu-list">
+
+                    <li>
+                        <div class="symbols">
+                            <svg class="symbol-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-exlamation"></use>
+                            </svg>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="symbols">
+                            <svg class="symbol-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-question"></use>
+                            </svg>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="symbols">
+                            <svg class="symbol-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-minus"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="symbols">
+                            <svg class="symbol-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-multiply"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="symbols">
+                            <svg class="symbol-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-divide"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="symbols">
+                            <svg class="symbol-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-arrow"></use>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
             </div>
             
         </div>

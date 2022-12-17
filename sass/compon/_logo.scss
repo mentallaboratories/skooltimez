@@ -1,63 +1,75 @@
+.logo__wrap {
+    // display: block;
+    // position: relative;
+    width: 220px;
+    height: auto;
+    display: inline-block;
+    //padding: 3px;
+    border-radius: 10px;
+    
+}
+
+
+
 .logo {
     font-family: 'Freckle Face', cursive;
     font-weight: 600;
     color:  rgb(32, 20, 2);
-    font-size: 40px;
-    line-height: 1.16px;
+    font-size: 35px;
+
+    line-height: 1.16;
     display: inline-block;
+    text-align: justify;
+    position: relative;
+    
+    
+    width: auto;
+    height: auto;
+    margin-left: 55px;
     text-shadow: 2px 2px rgb(243, 208, 9);
+
     &:hover, &:focus{
     color:  orangered;
-    //font-size: 40px;
-    line-height: 1.16px;
-    display: inline-block;
-    text-shadow: 2px 2px white;
-    }
+   
+    }   
 
+    &::before{
+        content: "";
 
-    
+        z-index: 0;
 
-    
+        position: absolute;
+        top: -10px;
+        left: -60px;
 
-   @include tablet{
-        font-size: 50px;
-    }
+        display: inline-block;
+        width: 55px;
+        height: 55px;
 
-}
-
-.logo__wrap {
-    position: relative;
-    width: 250px;
-    display: flex;
-    align-items:center;
-    height: 47px;
-
-    padding: 3px;
-    padding-left: 47px;
-    border-radius: 10px;
-    
-    background-image: url(../images/layout/smphone.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 5px;
-    &:hover, &:focus{
-    border: 1px solid white;
-    //background-color: rgba($color: rgb(243, 208, 9), $alpha: 0.5);
-    }
-
-    @include tablet{
-        height: 57px;
-        padding-left: 47px;
-        width: 300px;
-        background-image: url(../images/layout/tab.jpg);
-    }
-
-    @include desktop{
        
-        background-image: url(../images/layout/comp-pc.png);
+        border-radius: 50%;
+      //  background-color: white;
+        background-image: url(../images/layout/smphone.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        @include tablet{
+            font-size: 50px;
+            background-image: url(../images/layout/tab.jpg);
+        }
+    
+        @include desktop  {
+            background-image: url(../images/layout/comp-pc.png);
+        }
     }
 
+   
+
 }
+
+
+
+
 
 .heading{
     font-family: 'Freckle Face', cursive;
@@ -75,4 +87,4 @@
 
 .fancy{
      font-family: 'Finger Paint', cursive;
- }
+}

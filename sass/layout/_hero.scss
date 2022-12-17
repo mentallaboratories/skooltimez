@@ -1,8 +1,8 @@
-.hero {
+.hero-section {
     margin: 0 auto;
     padding: 6px;
     width: 100%;
-    height: 290px;
+    height: 490px;
     min-width: 256px;
 
   
@@ -11,7 +11,7 @@
     display: block;
     align-items: baseline;
     @include tablet{
-        height: 360px;
+        height: 460px;
     }
     
    
@@ -39,6 +39,10 @@
     @include tablet{
         align-items:baseline;
     }
+}
 
-
+.hero-content{
+    display: block;
+    width: 1200px;
+    height: 800px;
 }
