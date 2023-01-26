@@ -10,6 +10,7 @@
 
 
 
+
 .bloom-routines{
     display: flex;
     flex-wrap: wrap;
@@ -17,27 +18,40 @@
 }
 
 .remember__mode{
-    background-color: rgb(235, 66, 235);
-}
-
-.understand__mode{
-    background-color: blue;
-}
-
-.apply__mode{
-    background-color: green;
-}
-
-.analize__mode{
-    background-color: yellow;
-}
-
-.evaluate__mode{
+    fill: purple;
+    border-color: purple;
+    color: purple;
     background-color: orange;
 }
 
+.understand__mode{
+    fill: blue;
+    border-color: blue;
+    color: blue;
+}
+
+.apply__mode{
+    fill: green;
+    border-color: green;
+    color: green;
+}
+
+.analize__mode{
+    fill: yellow;
+    border-color: yellow;
+    color: yellow;
+}
+
+.evaluate__mode{
+    fill: orange;
+    border-color: orange;
+    color: orange;
+}
+
 .create__mode{
-    background-color: tomato;
+    fill: tomato;
+    border-color: tomato;
+    color: tomato;
 }
 
 
@@ -59,3 +73,25 @@
 
     
 }
+
+.set-icon{
+    stroke: $darkBrownColor;
+    fill: $yellowColor;
+    width: 90%;
+    height: 90%;
+   
+}
+
+.set-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid $darkBrownColor;
+}
+
+

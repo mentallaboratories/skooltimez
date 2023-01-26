@@ -40,9 +40,13 @@
 
 .skillbox-block__title{
     display: inline-block;
-    width: 150px;
+    //width: 150px;
     color: black;
     font-weight: 14px;
     letter-spacing: 1px;
     font-family: 'Pangolin', cursive;
+}
+
+.skills-list{
+    display: flex;
 }

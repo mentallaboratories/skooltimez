@@ -1,7 +1,7 @@
 /* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!*/
 .header {
     margin: 0 auto;
-    padding: 16px 0 6px 0;
+    padding: 6px 0 6px 0;
     width: 100%;
     height: inherit;
     min-width: 256px;
@@ -25,50 +25,7 @@
            
 }
 
-.guide__bg{
-    background:  url(../images/map-bg.jpg), linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,121,9,0.7) 21%, rgba(13,83,5,1) 100%);
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
-
-.home__bg{
-    background-size: 460px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image:  url(../images/layout/bookshelf.png);
-
-    @include tablet{
-        background-size: 760px;
-    background-image:  url(../images/layout/layout-lesson.png);
-    }
-    @include desktop{
-        background-size: 1200px;
-    background-image:  url(../images/layout/study.png);
-    }
-   
-  
-}
-
-
-.timetable__bg{
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    background-position: center 150px;
-    background:  url(../images/layout/study.png);
-    background-size: cover;
-}
-
-.storage__bg{
-    background-size:100vw;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-image:  url(../images/layout/storage.jpg);
-    
-   
-  
-}
 
 .header__container{
     display: flex;
@@ -96,6 +53,8 @@ align-items: center;
     height: 30px;
 }
 
-
+.header__nav{
+    order: 2;
+}
 
 

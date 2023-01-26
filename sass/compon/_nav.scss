@@ -15,6 +15,21 @@
 .nav__item{
     position: relative;
     display: none;
+
+    &:hover .mob-menu-icon, &:focus,
+        &:focus .mob-menu-icon, &:hover
+         {
+            fill: white;
+    };
+
+
+    &:hover .nav__link--gdisk,
+        &:focus .nav__link--gdisk
+         {
+            color: white;
+    };
+
+
   @include tablet{
   
     border-radius: 12px;
@@ -22,7 +37,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   background-color: rgba($color: white, $alpha: 0.7);
+   background-color: rgba($color: $yellowColor, $alpha: 0.7);
    }
 
    @include desktop{
@@ -37,6 +52,7 @@
 
 .mob-menu-list{
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -98,19 +114,22 @@
 
 .nav__link--gdisk{
     display: none;
+   
     @include desktop{
-        display: block;
+    display: block;
     height: 18px;
 
     border-radius: 3px;
     //background-color: gray;
-    color: white;
+    color: $darkBrownColor;
 
     padding: 3px 5px;
-
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 12px;
     line-height: 1.12;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+    //font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
 }

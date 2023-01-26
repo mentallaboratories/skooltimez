@@ -22,7 +22,8 @@
     text-align: justify;
     position: relative;
     
-    
+    order: 3;
+
     width: auto;
     height: auto;
     margin-left: 55px;
@@ -33,6 +34,39 @@
    
     }   
 
+    // &::before{
+    //     content: "";
+
+    //     z-index: 0;
+
+    //     position: absolute;
+    //     top: -10px;
+    //     left: -60px;
+
+    //     display: inline-block;
+    //     width: 55px;
+    //     height: 55px;
+
+       
+        
+    //     background-image: url(../images/layout/smphone.jpg);
+    //     background-size: contain;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     @include tablet{
+    //         font-size: 50px;
+    //         background-image: url(../images/layout/tab.jpg);
+    //     }
+    
+    //     @include desktop  {
+    //         background-image: url(../images/layout/comp-pc.png);
+    //     }
+    // }
+
+}
+
+.home, .it, .timetable{
+    position: relative;
     &::before{
         content: "";
 
@@ -47,14 +81,34 @@
         height: 55px;
 
        
-        border-radius: 50%;
-      //  background-color: white;
-        background-image: url(../images/layout/smphone.jpg);
+        
+      //  background-image: url(../images/layout/smphone.jpg);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         @include tablet{
             font-size: 50px;
+       //     background-image: url(../images/layout/tab.jpg);
+        }
+    
+        @include desktop  {
+           // background-image: url(../images/layout/comp-pc.png);
+        }
+    }
+}
+
+
+.home{
+    &::before{
+        background-image: url(../images/layout/house_colour.png);
+    }
+}
+
+
+.it{
+    &::before{
+        background-image: url(../images/layout/smphone.jpg);
+        @include tablet{
             background-image: url(../images/layout/tab.jpg);
         }
     
@@ -62,9 +116,12 @@
             background-image: url(../images/layout/comp-pc.png);
         }
     }
+}
 
-   
-
+.timetable{
+    &::before{
+        background-image: url(../images/layout/comp-planner.png);
+    }
 }
 
 
@@ -78,13 +135,13 @@
     font-size: 40px;
 }
 
-.instruction{
-    font-family: 'IBM Plex Mono', monospace;
-}
-.hand-written{
-    font-family: 'Pangolin', cursive;
-}
+// .instruction{
+//     font-family: 'IBM Plex Mono', monospace;
+// }
+// .hand-written{
+//     font-family: 'Pangolin', cursive;
+// }
 
-.fancy{
-     font-family: 'Finger Paint', cursive;
-}
+// .fancy{
+//      font-family: 'Finger Paint', cursive;
+// }

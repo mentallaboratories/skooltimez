@@ -20,10 +20,12 @@
 // }
 
 .flex-row{
+    margin: 0 auto;
     display: block;
     @include tablet{
     display: flex;
     gap: 35px;
+    justify-content: space-between;
     }
 }
 
@@ -36,15 +38,47 @@
     margin-bottom: 16px;
 }
 
-.section-thumb{
+.flex-column{
     display: flex;
     flex-direction: column;
-    gap: 8px;
     width: 100%;
+
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: dotted;
+    padding: 3px;
+}
+
+.section-thumb{
+    margin: 0 auto;
+    padding: 0 5px;
+
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    gap: 8px;
+
+
+    overflow: overlay;
+
+
+    background-color:white;
+   // align-items: center;
+    
+    width: 400px;
+    height: 600px;
     @include tablet{
-        width: 45%;
+        width: 600px;
+        height: 400px;
+    }
+
+    @include desktop{
+        width: 680px;
     }
 }
+
+
+
 
 .section-aim{
     font-family: "Finger Paint",cursive;
@@ -55,8 +89,36 @@
 .section-title{
     font-family: "Freckle Face",cursive;
     font-weight: 600;
-    color: #000;
+    color: $yellowColor;
     font-size: 32px;
+    line-height: 1.36;
+    max-width: 600px;
+    height: 200px;
+
+    display: flex;
+
+   
+    
+}
+
+.section-info-title{
+    //font-family: "Freckle Face",cursive;
+    font-weight: 600;
+    //color: $yellowColor;
+    font-size: 22px;
+    line-height: 1.36;
+
+    display: flex;
+
+    padding: 5px;
+    
+}
+
+.section-it-title{
+    font-family: "Freckle Face",cursive;
+    font-weight: 600;
+    color: $yellowColor;
+    font-size: 22px;
     line-height: 1.36;
 
     display: flex;
@@ -77,4 +139,18 @@
     }
 }
 
+.section-icon{
+    fill:white;
+    width: 32px;
+    height: 32px;
+}
 
+.rotate90{
+    transform: rotate(90deg);
+}
+
+.section-icon-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
