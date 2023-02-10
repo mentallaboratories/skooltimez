@@ -1,18 +1,18 @@
 /* !!!!!!!!!!!-------header--------!!!!!!!!!!!!!!!!*/
 .header {
     margin: 0 auto;
-    padding: 16px 0 6px 0;
-    width: 100%;
-    height: inherit;
+    padding: 6px;
+
+    height: 60px;
     min-width: 256px;
 
     background-color: rgb(122, 76, 6);
 
   
     max-width: 1200px;
-    display: block;
-    //display: flex;
-    //align-items: baseline;
+
+    display: flex;
+    align-items: baseline;
     @include tablet{
         height: 90px;
     }
@@ -34,19 +34,11 @@
 
 
 .home__bg{
-    background-size: 460px;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    background-image:  url(../images/layout/bookshelf.png);
-
-    @include tablet{
-        background-size: 760px;
+    //background-position: left bottom;
     background-image:  url(../images/layout/layout-lesson.png);
-    }
-    @include desktop{
-        background-size: 1200px;
-    background-image:  url(../images/layout/study.png);
-    }
+    
    
   
 }
@@ -72,10 +64,9 @@
 
 .header__container{
     display: flex;
-//    width: 100%;
-//    height: 100%;
-align-items: center;
-  justify-content:space-between;
+   width: 100%;
+   height: 100%;
+   justify-content:space-between;
     
     @include mobile{
         
