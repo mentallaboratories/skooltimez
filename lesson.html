@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+    }
+
+    .container {
+      position: relative;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .background {
+      width: 100%;
+    }
+
+    /* Бульбашка */
+    .speech {
+      position: absolute;
+      top: 60px;
+      left: 40px;
+      width: 250px;
+      height: 150px;
+      padding: 15px;
+      background: white;
+      border-radius: 10px;
+      border: 2px solid black;
+      overflow-y: auto;
+      font-size: 16px;
+    }
+
+    /* Смартборд */
+    .board {
+      position: absolute;
+      top: 80px;
+      left: 320px;
+      width: 550px;
+      height: 300px;
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .board img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* Клік-зони */
+    .calendar {
+      position: absolute;
+      top: 200px;
+      right: 50px;
+      width: 120px;
+      height: 120px;
+      cursor: pointer;
+    }
+
+    .schedule {
+      position: absolute;
+      top: 80px;
+      right: 50px;
+      width: 150px;
+      height: 80px;
+      cursor: pointer;
+    }
+
+    /* Панель управління */
+    .controls {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    input, button {
+      padding: 8px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Фон -->
+  <img src="layout-lesson.png" class="background">
+
+  <!-- Бульбашка -->
+  <div class="speech" id="speech">
+    Hello! Today we have a lesson.
+  </div>
+
+  <!-- Смартборд -->
+  <div class="board">
+    <img id="boardImage" src="example.jpg" alt="board">
+  </div>
+
+  <!-- Клік-зони -->
+  <a href="https://calendar.google.com" target="_blank">
+    <div class="calendar"></div>
+  </a>
+
+  <a href="https://example.com/schedule" target="_blank">
+    <div class="schedule"></div>
+  </a>
+</div>
+
+<!-- Управління -->
+<div class="controls">
+  <input type="text" id="textInput" placeholder="Введи текст для вчителя">
+  <button onclick="setSpeech()">Показати текст</button>
+
+  <input type="text" id="imgInput" placeholder="URL картинки (jpg)">
+  <button onclick="setImage()">Змінити зображення</button>
+</div>
+
+<script>
+  function setSpeech() {
+    const text = document.getElementById("textInput").value;
+    document.getElementById("speech").innerText = text;
+  }
+
+  function setImage() {
+    const url = document.getElementById("imgInput").value;
+    document.getElementById("boardImage").src = url;
+  }
+</script>
+
+</body>
+</html>
