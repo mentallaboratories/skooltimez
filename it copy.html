@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Lesson UI</title>
+<style>
+body {
+  font-family: Arial;
+  background: #f4f6f8;
+  padding: 20px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: #2c3e50;
+  stroke-width: 2;
+  fill: none;
+}
+
+.icon:hover svg {
+  stroke: #3498db;
+  transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+
+<h2>Іконки інтерфейсу уроку</h2>
+
+<div class="toolbar">
+
+  <!-- 📚 Урок -->
+  <div class="icon" title="Урок">
+    <svg viewBox="0 0 24 24">
+      <path d="M4 4h14v16H4z"/>
+      <path d="M4 4l8 4 6-4"/>
+    </svg>
+  </div>
+
+  <!-- 🧑‍🏫 Вчитель -->
+  <div class="icon" title="Вчитель">
+    <svg viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4"/>
+      <path d="M4 20c0-4 4-6 8-6s8 2 8 6"/>
+    </svg>
+  </div>
+
+  <!-- 🖥️ Смарт-дошка -->
+  <div class="icon" title="Дошка">
+    <svg viewBox="0 0 24 24">
+      <rect x="3" y="4" width="18" height="12"/>
+      <path d="M8 20h8M10 16v4M14 16v4"/>
+    </svg>
+  </div>
+
+  <!-- 📅 Календар -->
+  <div class="icon" title="Календар">
+    <svg viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="16"/>
+      <path d="M16 3v4M8 3v4M3 10h18"/>
+    </svg>
+  </div>
+
+  <!-- 🕒 Розклад -->
+  <div class="icon" title="Розклад">
+    <svg viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M12 7v6l4 2"/>
+    </svg>
+  </div>
+
+  <!-- 📝 Тест -->
+  <div class="icon" title="Тест">
+    <svg viewBox="0 0 24 24">
+      <rect x="4" y="3" width="16" height="18"/>
+      <path d="M8 7h8M8 11h8M8 15h5"/>
+    </svg>
+  </div>
+
+</div>
+
+</body>
+</html>
